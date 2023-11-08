@@ -1,6 +1,6 @@
 'use client';
 
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu } from 'react-icons/ai'; // 햄버거 버튼
 import { useCallback, useState } from 'react';
 import { Avatar } from '../Avatar';
 import { MenuItem } from './MenuItem';
