@@ -4,3 +4,4 @@ export * from './Avatar';
 export * from './ClientOnly';
 export * from './modals';
 export * from './Button';
+export * from './Heading';

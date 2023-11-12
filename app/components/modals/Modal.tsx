@@ -38,7 +38,9 @@ export const Modal: React.FC<ModalProps> = ({
   const handleClose = useCallback(() => {
     if (disabled) return;
     setShowModal(false);
-    setTimeout(() => {}, 300);
+    setTimeout(() => {
+      onClose();
+    }, 300);
   }, [disabled, onClose]);
 
   const handleSubmit = useCallback(() => {

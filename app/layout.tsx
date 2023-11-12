@@ -1,7 +1,7 @@
 import './globals.css';
 import { Nunito } from 'next/font/google'; // 폰트 추가
 import type { Metadata } from 'next';
-import { ClientOnly, Navbar, Modal } from './components';
+import { ClientOnly, Navbar, RegisterModal } from './components';
 
 export const metadata: Metadata = {
   title: 'Airbnb', // 브라우저 랜더시 타이틀
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={font.className}>
         <ClientOnly>
-          <Modal isOpen />
+          <RegisterModal />
           <Navbar />
         </ClientOnly>
         {children}
