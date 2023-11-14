@@ -153,7 +153,7 @@ export const Modal: React.FC<ModalProps> = ({
                       disabled={disabled}
                       onClick={handleSecondaryAction}
                     />
-                  )}{' '}
+                  )}
                   {/* 버튼이 두 개 있어야 반대 버튼을 만들 수 있도록 설정 */}
                   <Button
                     label={actionLabel}
@@ -161,6 +161,7 @@ export const Modal: React.FC<ModalProps> = ({
                     onClick={handleSubmit}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
